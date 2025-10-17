@@ -5,28 +5,27 @@
 
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="Game Developer Portfolio - Nikita Pogutsa. 7+ years experience in Unity, Unreal Engine, C#, C++. Worked on Risk of Rain 2, Dragon Champions, and other AAA titles."/>
-<title>Portfolio</title>   
+<meta name="description" content="Game Developer Portfolio - Jonathan Rust. Unity, Unreal Engine, C#, C++. Gameplay, UI, tools, and systems."/>
+<title>Jonathan Rust - Portfolio</title>   
 
 <!-- Open Graph Meta Tags for social media sharing -->
-<meta property="og:title" content="Nikita Pogutsa - Game Developer Portfolio">
-<meta property="og:description" content="Experienced Game Developer with 7+ years in Unity & Unreal Engine. Worked on Risk of Rain 2, Dragon Champions, and other AAA titles. Specializing in C#, C++, gameplay mechanics, and team leadership.">
+<meta property="og:title" content="Jonathan Rust - Game Developer Portfolio">
+<meta property="og:description" content="Game Developer with experience in Unity & Unreal Engine. Specializing in C#, C++, gameplay, UI, and tools.">
 <meta property="og:image" content="assets/img/portfolio.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://nikita-pogutsa.github.io/my_portfolio">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Nikita Pogutsa Portfolio">
+<meta property="og:site_name" content="Jonathan Rust Portfolio">
 
 <!-- LinkedIn specific meta tags -->
-<meta property="linkedin:title" content="Nikita Pogutsa - Game Developer Portfolio">
-<meta property="linkedin:description" content="Experienced Game Developer with 7+ years in Unity & Unreal Engine. Worked on Risk of Rain 2, Dragon Champions, and other AAA titles. Specializing in C#, C++, gameplay mechanics, and team leadership.">
+<meta property="linkedin:title" content="Jonathan Rust - Game Developer Portfolio">
+<meta property="linkedin:description" content="Game Developer with experience in Unity & Unreal Engine. Specializing in C#, C++, gameplay, UI, and tools.">
 <meta property="linkedin:image" content="assets/img/portfolio.png">
 
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nikita Pogutsa - Game Developer Portfolio">
-<meta name="twitter:description" content="Experienced Game Developer with 7+ years in Unity & Unreal Engine. Worked on Risk of Rain 2, Dragon Champions, and other AAA titles.">
+<meta name="twitter:title" content="Jonathan Rust - Game Developer Portfolio">
+<meta name="twitter:description" content="Game Developer with experience in Unity & Unreal Engine. Specializing in C#, C++, gameplay, UI, and tools.">
 <meta name="twitter:image" content="assets/img/portfolio.png">
 
 <!-- Mobile Specifics -->
@@ -69,17 +68,17 @@
     	<div class="row">
         	<div class="span2">
             	<div id="logo" style="display: flex; align-items: center; gap: 16px;">
-    <img src="assets/img/about.jpg" alt="Profile" style="width:60px; height:60px; border-radius:50%; object-fit:cover;">
-    <span style="font-size: 1.7em; font-weight: bold; color: inherit;">Nikita Pogutsa</span>
+    <img src="assets/img/about.jpg" alt="Profile photo of Jonathan Rust" style="width:60px; height:60px; border-radius:50%; object-fit:cover;">
+    <span style="font-size: 1.7em; font-weight: bold; color: inherit;">Jonathan Rust</span>
 </div>
 <div class="contact-links-responsive">
-    <a href="https://www.linkedin.com/in/npoguca" target="_blank" title="LinkedIn" class="contact-link">
+    <a href="https://www.linkedin.com/in/jonathan-rust-00759a49/" target="_blank" title="LinkedIn" class="contact-link">
         <img src="assets/img/linkedin.svg" alt="LinkedIn" style="width:22px; height:22px; vertical-align: middle;">
     </a>
-    <a href="mailto:npgtsa@pm.me" title="Email" class="contact-link">
-        npgtsa@pm.me
+    <a href="mailto:jonathanrust@gmail.com" title="Email" class="contact-link">
+        jonathanrust@gmail.com
     </a>
-    <a href="https://drive.google.com/file/d/13WpJG-xWLpuJ_mj-4histnTFKlaGhOfl/view?usp=sharing" target="_blank" class="contact-link download-resume-link" title="View CV" style="border: none; background: none; display: flex; align-items: center; gap: 4px;">
+    <a href="https://example.com/jonathan-rust-cv.pdf" target="_blank" class="contact-link download-resume-link" title="View CV" style="border: none; background: none; display: flex; align-items: center; gap: 4px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="#fff"/><path d="M7 7h10M7 11h10M7 15h6" stroke="#e53e3e"/><rect x="7" y="15" width="6" height="2" fill="#e53e3e"/><text x="12" y="19" text-anchor="middle" font-size="7" fill="#e53e3e" font-family="Arial, Helvetica, sans-serif">PDF</text></svg>
         <span style="font-size: 1em; color: inherit;">CV</span>
     </a>
@@ -213,6 +212,29 @@
   section {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+  }
+  /* Portfolio images: uniform vertical crop without zoom */
+  #portfolio .row .span6:first-child > div {
+    height: 300px;
+    overflow: hidden;
+  }
+  #portfolio .row .span6:first-child img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: initial; /* neutralize any prior rules */
+    object-position: initial;
+  }
+  /* Responsive heights */
+  @media (max-width: 900px) {
+    #portfolio .row .span6:first-child > div {
+      height: 240px;
+    }
+  }
+  @media (max-width: 600px) {
+    #portfolio .row .span6:first-child > div {
+      height: 180px;
+    }
   }
 </style>
 <!-- End Header -->
