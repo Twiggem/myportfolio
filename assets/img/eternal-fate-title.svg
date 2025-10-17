@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Eternal Fate - Title Card</title>
+  <desc id="desc">A simple local title card image for the Eternal Fate project, with a dark gradient background and centered title text.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1a"/>
+      <stop offset="50%" stop-color="#162235"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle vignette -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+    <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+  </radialGradient>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#vignette)"/>
+
+  <!-- Decorative lines -->
+  <g opacity="0.35">
+    <path d="M0 520 L1200 420" stroke="#6ad0ff" stroke-opacity="0.25" stroke-width="2"/>
+    <path d="M0 560 L1200 460" stroke="#6ad0ff" stroke-opacity="0.2" stroke-width="2"/>
+    <path d="M0 600 L1200 500" stroke="#6ad0ff" stroke-opacity="0.15" stroke-width="2"/>
+  </g>
+
+  <!-- Title Text -->
+  <g filter="url(#shadow)">
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+          font-family="'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+          font-size="120" font-weight="700" fill="#E8F4FF" letter-spacing="2">
+      ETERNAL FATE
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle"
+        font-family="'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+        font-size="28" font-weight="600" fill="#9bd3ff" opacity="0.9" letter-spacing="3">
+    PORTED TO STEAM • CHICKEN CHASE PVP MODE
+  </text>
+
+  <!-- Corner accent -->
+  <g opacity="0.55">
+    <circle cx="1120" cy="70" r="26" fill="#6ad0ff"/>
+    <circle cx="1120" cy="70" r="22" fill="#142235"/>
+    <circle cx="1120" cy="70" r="6" fill="#6ad0ff"/>
+  </g>
+</svg>
